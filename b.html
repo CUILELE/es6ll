@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function (){
+            // let li = document.querySelectorAll('li');
+            // // let liarr = [...li];
+            // console.log(Array.from(li));
+
+        //     function show(){
+        //        let arr = Array.from(arguments);
+        //        console.log(arr);
+               
+        //     }
+        //    show(1,2,3,4,5)
+
+                // let str = 'abcde';
+                // let arr = str.split('');
+                // let arr = Array.from(str)
+                // console.log(arr);
+
+                // let json = {
+                //     0:'apple',
+                //     1:'banana',
+                //     2:'origin',
+                //     length:3
+                // }
+                
+                // let arr = Array.from(json);
+                // console.log(arr);
+            // let arr = [1,2,3,4,5];
+            // let aaa= arr.find((val,index,arr)=>{
+            //     return val>1;
+            // })
+            // let bbb = arr.findIndex((val,index,arr)=>{
+            //     return val > 3;
+            // })
+
+            // console.log(bbb);
+
+            // let arr = new Array(10);
+            // arr.fill('cli',1,3)
+            // console.log(arr);
+
+            // let arr = ['apple','origin','banana','cll']
+            
+            // console.log(arr.includes('apple'));
+
+            // let json = {
+            //     name:'cll',
+            //     age:18,
+            //     showA:function (){
+            //         return this.name;
+            //     }
+            // }
+            // console.log(json.showA());
+            // let [name,age] = ['sisi',199]        
+            // let jsona = {
+            //     name,
+            //     age,
+            //     showA(){
+            //         return name;
+            //     }
+            // }
+            // console.log(jsona.showA());
+
+            // console.log(Object.is('1',1));
+
+            function aaa(options){
+                let defult = {
+                    type:'get',
+                    url:'ccccxxx',
+                    header:'toubu'
+                }
+                let json = Object.assign(defult,options);
+                console.log(json);
+                
+            }
+            // aaa({header:'aaaaaaa'});
+
+
+            // let [name,age] = ['cll',19]
+            // let json = {
+            //     name,
+            //     age
+            // }
+
+            // let json2 = {
+            //     sex:'男',
+            //     color:'yellow',
+            //     name:'nono'
+            // }
+            
+            // let json4 = {
+            //     like:'girl'
+            // }
+            // let json3 = Object.assign(json,json2,json4);
+
+            // console.log(json3);
+
+            // let a = {name:'ccc'};
+            // let b = {name:'aaa'};
+
+            // function extensd(obj1,obj2){
+            //     for(let attr in obj2){
+            //         obj1[attr] = obj2[attr];
+            //     }
+            // }
+            // extensd(a,b)
+            // console.log(a);
+
+            // let arr = [1,2,3,4,5];
+            // console.log(Object.assign([],arr))
+            let [a,b,c,] = [1,2,3];
+           
+            let json = {
+                a,
+                b,
+                c
+            }
+
+            let [keys,values,entries] = Object;
+            for(let key of keys(json)){
+                console.log(key);
+            }
+
+            
+        }
+        
+    </script>
+</head>
+<body>
+    <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+        <li>555</li>
+    </ul>
+</body>
+</html>
